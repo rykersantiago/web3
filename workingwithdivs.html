@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #login {
+            position: relative;
+            top: -20px;
+        }
+        img {
+            height: 100px;
+            width: auto;
+        }
+        iframe {
+            flex: auto;
+            height: 200px;
+        }
+        .myLogo {
+            width: 120px;
+            padding: 5px;
+            background-color: aqua;
+            height: 120px;
+            float: left;
+            margin: 5px;
+        }
+        .myHeader {
+            width: 80%;
+            padding: 5px;
+            background-color: yellow;
+            height: 120px;
+            margin: 5px;
+            float: left;
+        }
+        .left_panel {
+            width: 200px;
+            padding: 5px;
+            background-color: pink;
+            height: 450px;
+            margin: 5px;
+            float: left;
+        }
+        .contents1 {
+            width: 400px;
+            padding: 5px;
+            background-color: green;
+            height: 450px;
+            margin: 5px;
+            float: left;
+        }
+        .contents2 {
+            width: 400px;
+            padding: 5px;
+            background-color: orange;
+            height: 450px;
+            margin: 5px;
+            float: left;
+        }
+        .myFooter {
+            width: 100%;
+            padding: 5px;
+            background-color: orange;
+            height: 250px;
+            margin: 5px;
+            float: left;
+        }
+        div {
+            width: 30%;
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="myLogo">
+        <h2>Logo</h2>
+        <p>will be here</p>
+    </div>
+    <div class="myHeader">
+        <h2>Header</h2>
+        <form action="" id="login">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <input type="reset" value="reset"> <input type="submit" name="" id="">
+        </form>
+    </div>
+    <div class="left_panel">
+        <h2>Left menu</h2>
+        <form action="/search_page" method="get">
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" placeholder="Enter search terms" />
+        <button type="submit">Search</button>
+        </form>
+
+        <p>Left panel will be here</p>
+    </div>
+    <div class="contents1">
+        <h2>Contents</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.7236810537484!2d151.16303797595322!3d-33.922510573206054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b0f48e0ab99b%3A0x142a4052773a31d!2sIKEA!5e0!3m2!1sen!2sau!4v1773628821272!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <img src="media/adobe-express-qr-code.svg" alt="">
+    </div>
+    <div class="contents2">
+        <h2>Radio buttons</h2>
+        <p>Choose your favorite car:</p>
+        <form action="">
+            <input type="radio" id="bmw" name="fav_car" value="bmw">
+            <label for="bmw">BMW</label>
+            <br>
+            <input type="radio" id="ferrari" name="fav_car" value="ferrari">
+            <label for="ferrari">Ferrari</label>
+            <br>
+            <input type="radio" id="mercedes" name="fav_car" value="Mercedes">
+            <label for="mercedes">Mercedes</label>
+        </form>
+        <h2>Checkboxes</h2>
+        <p>The <strong>input type="checkbox"</strong>defines a checkbox:</p>
+        <form action="">
+            <input type="checkbox" id="option1" name="option1" value="apples">
+            <label for="option1">I have apples</label>
+            <input type="checkbox" name="option2" id="option2" value="oranges">
+            <label for="option">I have oranges</label>
+            <input type="checkbox" id="option3" name="option3" value="grapes">
+            <label for="option3">I have grapes</label>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+    <div class="myFooter">
+        <h2>Footer</h2>
+        <p>Links will be here</p>
+    </div>
+</body>
+</html>
